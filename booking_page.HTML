@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details Page</title>
+    <link rel="stylesheet" href="booking_Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Booker Details</div>
+        <form id="bookingForm" action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Phone Number" required>
+                </div>
+
+                <div class="btns">
+                    <button type="button" class="Payment" id="creditcard">Credit Card</button>
+                    <button type="button" class="Payment" id="coinpayment">Coin Payment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var form = document.getElementById('bookingForm');
+            return form.checkValidity();
+        }
+
+        document.getElementById("creditcard").addEventListener('click', function() {
+            if (validateForm()) {
+                window.location.href = "Payment.html";
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        document.getElementById("coinpayment").addEventListener('click', function() {
+            if (validateForm()) {
+                window.location.href = "refno.html";
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>

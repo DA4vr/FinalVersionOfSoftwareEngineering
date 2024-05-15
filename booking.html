@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Washing Machine Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="booking-form">
+    <h1>Book a Washing Machine</h1>
+    <form id="form">
+      <label for="machine">Select Machine:</label>
+      <select id="machine" required>
+      </select>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Select Time:</label>
+      <select id="time" required>
+      </select>
+
+      <button type="submit">Book</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="implement.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* 
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+}
+
+h1,h2
+{
+
+  font-family: sans-serif;
+  font-weight:400 ;
+
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.flex
+{
+  display: flex;
+}
+.flex_space
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn{
+  padding: 15px 40px;
+  background: #7490ff;
+  font-weight: bold;
+  color: white;
+}
+
+.secondary-btn{
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+.container
+{
+  max-width: 85%;
+  margin: auto;
+}
+
+header{
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+}
+
+header img
+{
+  margin: 20px 0;
+
+}
+
+header ul{
+  display: inline-block;
+}
+header ul li{
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a:hover{
+  color:#7490ff;
+}
+
+header i{
+  margin: 0 20px;
+
+}
+header button{
+  padding: 13px 40px;
+}
+
+header .navlinks span{
+  display: none;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next
+{
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0,0,0,0.5) !important;
+  color: #fff;  
+}
+
+.owl-nav .owl-next
+{
+  right: 0;
+}
+
+.owl-nav .owl-prev{
+  left: 0;
+}
+
+.grid
+{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 20px;
+}
+
+input{
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book
+{
+  padding: 40px 0;
+  background: #282834;
+  color: #fff;
+}
+
+.book h1{
+  font-family: 28px;
+}
+
+.book h1 span{
+  color: #42a8c1
+}
+
+.book input{
+  padding: 20px;
+
+}
+
+.book input:nth-last-child(1)
+{
+  background: #42a8c1;
+  color: #fff;
+}
+
+.datepicket-date-display
+{
+  background-color: linear-gradient(45deg,#7490ff,#282834);
+}

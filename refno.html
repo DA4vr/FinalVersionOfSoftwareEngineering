@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="refNoStyle.css">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo image!">
+        <h1>Thank You for Your Booking!</h1>
+        <p>Your reference number is:</p>
+        <p class="reference-number" id="reference-number"></p>
+        <p class="points">You have earned 25 points</p>
+        <p class="rewards">Reach 100 points to earn rewards!</p>
+        <a href="index.html" class="home-button">Go to Home</a>
+    </div>
+    <script>
+        const referenceNumber = 'REF' + Math.random().toString(36).substr(2, 9).toUpperCase();
+        document.getElementById('reference-number').textContent = referenceNumber;
+    </script>
+</body>
+</html>
