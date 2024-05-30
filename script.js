@@ -7,14 +7,13 @@ import { timeEnd } from 'console';
 Vue.config.productionTip = false;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD9gHim51ecM6rMqMjF7N-FNDJRnGOTnnI",
-  authDomain: "software-engineering-17dd3.firebaseapp.com",
-  databaseURL: "https://software-engineering-17dd3-default-rtdb.firebaseio.com",
-  projectId: "software-engineering-17dd3",
-  storageBucket: "software-engineering-17dd3.appspot.com",
-  messagingSenderId: "952604620572",
-  appId: "1:952604620572:web:29a19895e888e56338acd9",
-  measurementId: "G-551MVD47X1"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -61,7 +60,7 @@ Vue.component('booking',
         if(this.date)
           {
             this.dateSelected = 'selected';
-            this.$http.get('https://software-engineering-17dd3-default-rtdb.firebaseio.com').then(function(data){
+            this.$http.get('').then(function(data){
               let savedData = Object.values(data.body);
               for(let x = 0;x<savedData.length;x++)
                 {
@@ -88,7 +87,7 @@ Vue.component('booking',
         (!this.customerName)?this.notification('last-noti'):this.validationName = true;
         if(this.validationDate == true & this.validationName == true & this.validationTime == true)
           {
-            this.$http.post('https://software-engineering-17dd3-default-rtdb.firebaseio.com',{
+            this.$http.post('',{
               "customerName": this.customerName,
               "customerNumber": this.customerNumber,
               "date":this.date,
